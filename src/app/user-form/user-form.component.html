@@ -1,0 +1,25 @@
+<h2>{{ isEditing ? 'Edit User' : 'Add New User' }}</h2>
+<form (ngSubmit)="saveUser()">
+  <label>Name:</label>
+  <input type="text" [(ngModel)]="user.name" name="name" required>
+
+  <label>Email:</label>
+  <input type="email" [(ngModel)]="user.email" name="email" required>
+
+  <label>Password:</label>
+  <input type="password" [(ngModel)]="user.password" name="password" required>
+
+  <label>Status:</label>
+  <select [(ngModel)]="user.status" name="status">
+    <option value="active">Active</option>
+    <option value="inactive">Inactive</option>
+  </select>
+
+  <label>Access Level:</label>
+  <select [(ngModel)]="user.accessLevel" name="accessLevel">
+    <option value="admin">Admin</option>
+    <option value="user">User</option>
+  </select>
+
+  <button type="submit">{{ isEditing ? 'Update' : 'Save' }}</button>
+</form>

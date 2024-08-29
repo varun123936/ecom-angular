@@ -1,0 +1,21 @@
+{
+  "users": [
+    {
+      "id": "2",
+      "name": "Jane Smith",
+      "email": "jane.smith@example.com",
+      "password": "Jane1234",
+      "confirmPassword": "Jane1234",
+      "status": "inactive",
+      "accessLevel": "user"
+    },
+    {
+      "id": "d7f1",
+      "name": "varun",
+      "email": "tejavarun689@gmail.com",
+      "password": "varun123",
+      "status": "active",
+      "accessLevel": "admin"
+    }
+  ]
+}
